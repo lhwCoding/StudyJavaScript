@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<body >
+
+<p id="one">Wellcome to JavaScript</p> 
+
+<p>点击弹出对话框</p>
+ <button type="button" onclick="alert('Wellcome javascript')">Onclik me</button>
+
+ <br>
+
+<p>点击调用函数改变</p>
+ <button type="button"  onclick="myOnclick()">Change World</button>
+<br>
+
+ <script type="text/javascript">
+
+ function myOnclick(){
+ 	document.getElementById("one").innerHTML="Hello JavaScript";
+ }
+
+ /*写入HTML 输出流*/
+
+document.write("<h1>这是一个标题</h1>");
+document.write("<p>这是一个段落。</p>");
+
+ /*对象的定义与输出*/
+ document.write("对象的定义与输出"+"<br>");
+ 	var person={
+ 		name:"Mr_kings",
+ 		 sex:"man",
+ 		 id:110
+
+ 	}
+
+ 	document.write(person.name+"<br>");
+ 	document.write(person.sex+"<br>");
+ 	document.write(person["id"]+"<br>");
+  /*数组定义形式与遍历*/
+  document.write("数组定义形式与遍历"+"<br>");
+ 	var strs1=new Array();
+ 	strs1[0]=person.name;
+ 	strs1[1]=person.sex;
+ 	strs1[2]="this nice";
+   for (var i =0;i< strs1.length; i++) {
+   	 	document.write(strs1[i]+"<br>");
+   }
+
+   var strs2= Array("Hello","I'man","what");
+   for (var i =0;i< strs2.length; i++) {
+   	 	document.write(strs2[i]+"<br>");
+   }
+
+   var strs3= Array["Sia","kaka","bengbneng"];
+    for (var i =0;i< strs3.length; i++) {
+   	 	document.write(strs3[i]+"<br>");
+   }
+
+
+ </script>
+</body>
+</html>
