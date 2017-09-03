@@ -1,0 +1,59 @@
+div {
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  width:120px;
+}
+
+a{
+text-decoration:none;
+}
+
+#header{
+	background-color: #FFA500;
+	width: 500px;
+	text-align: center;
+}
+#container{
+	width: 500px;
+}
+#menu{
+	background-color: #FFD700;
+	height: 200px;
+	width: 100px;
+	float: left
+}
+#content{
+	background-color: #EEEEEE;
+	height: 200px;
+	width: 400px;
+	float: left;
+}
+#footer{
+	background-color: #FFA500;
+	clear: both;
+	text-align: center;
+	width: 500px;
+}
+.tabtop {
+	margin-top: 13px;
+}
+.tabtop td{
+	background-color:#ffffff;
+	height:25px;
+	line-height:150%;
+	text-align:center;
+}
+.font-center{ text-align:center}
+
+.btbg{background:#e9faff !important;}
+
+.titfont {
+	
+	font-family: 微软雅黑;
+	font-size: 16px;
+	font-weight: bold;
+	color: #255e95;
+	background: url(../images/ico3.gif) no-repeat 15px center;
+	background-color:#e9faff;
+}

@@ -4,6 +4,7 @@
 <body >
 
 <p id="one">Wellcome to JavaScript</p> 
+<p id="demo">操作元素改变</p>
 
 <p>点击弹出对话框</p>
  <button type="button" onclick="alert('Wellcome javascript')">Onclik me</button>
@@ -14,16 +15,21 @@
  <button type="button"  onclick="myOnclick()">Change World</button>
 <br>
 
- <script type="text/javascript">
+ <script>
+ window.alert("Window For JavaScript");
 
  function myOnclick(){
  	document.getElementById("one").innerHTML="Hello JavaScript";
  }
 
- /*写入HTML 输出流*/
+ /*写到Html 文档*/
 
 document.write("<h1>这是一个标题</h1>");
 document.write("<p>这是一个段落。</p>");
+
+
+ // 操作Html 元素 同id 控制
+ document.getElementById("demo").innerHTML="changge for JavaScript";  
 
  /*对象的定义与输出*/
  document.write("对象的定义与输出"+"<br>");
